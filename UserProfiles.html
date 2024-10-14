@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="UserProfiles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h2>User Profile</h2>
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <div id="nameError" class="error"></div>
+
+            <label for="profilePic">Profile Picture:</label>
+            <input type="file" id="profilePic" accept="image/*">
+            <img id="profilePreview" alt="Profile Preview" class="hidden">
+
+            <label for="bio">Bio:</label>
+            <textarea id="bio" placeholder="Enter a short bio (max 150 characters)"></textarea>
+            <div id="bioError" class="error"></div>
+
+            <button type="submit">Update Profile</button>
+            <div id="profileMessage"></div>
+        </form>
+    </div>
+
+    <script src="UserProfiles.js"></script>
+</body>
+</html>
